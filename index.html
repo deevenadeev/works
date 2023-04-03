@@ -1,0 +1,2100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<style type="text/css">
+	
+	.card img{
+  width: 100%;
+  height: 275px;
+}
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+       @media (min-width: 1920px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      @media only screen and (min-width: 1920px) {
+  .col1 img {
+    width: 420px;
+    height: 200px;
+  }
+}
+.col1{
+transition: 1s;
+}
+.col1:hover{
+  transform: scale(0.9);
+}
+.col{
+transition: 1s;
+}
+.col:hover{
+  transform: scale(0.9);
+}
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+      .navbar-brand img{
+      	width: 40px;
+      	height: 40px;
+      }
+       .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+          width:100;
+
+        }
+      }
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+</style>
+</head>
+	<nav class="navbar bg-light ">
+  <div class="container-fluid">
+    <a class="navbar-brand">ART</a>
+    <form class="d-flex" role="search">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+	<nav class="navbar navbar-expand-lg bg-light sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#about"><img src="images/pa.jpg"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#artist">Artists</a>
+        </li>
+        <!-- paint dropdown -->
+         <div class="dropdown">
+  <a class="btn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Paints
+  </a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#abstract">Abstract Style</a></li>
+    <li><a class="dropdown-item" href="#expressionsim">Expressionism Style</a></li>
+    <li><a class="dropdown-item" href="#pop">Pop Style</a></li>
+    <li><a class="dropdown-item" href="#surrealism">Surrealism Style</a></li>
+    <li><a class="dropdown-item" href="#realism">Realism Style</a></li>
+    <li><a class="dropdown-item" href="#photorealism">Photorealism Style</a></li>
+  </ul>
+</div>
+<!-- art dropdown -->
+   <div class="dropdown">
+  <a class="btn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+  Arts
+  </a>
+
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#oil">Oil Art</a></li>
+    <li><a class="dropdown-item" href="#water">Water Art</a></li>
+    <li><a class="dropdown-item" href="#spray">Spray Art</a></li>
+    <li><a class="dropdown-item" href="#gouache">Gouache Art</a></li>
+    <li><a class="dropdown-item" href="#frescho">Fresco Art</a></li>
+    <li><a class="dropdown-item" href="#digital">Digital Art</a></li>
+  </ul>
+</div>
+         <li class="nav-item">
+          <a class="nav-link" href="#submit">Contact</a>
+        </li>
+          <!-- Button trigger modal -->
+           <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#exampleModal">
+ SignIn
+</button> 
+          
+    </div>
+  </div>
+</nav>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+         <form class="">
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com" required>
+            <label for="floatingInput">Email address</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password" required>
+            <label for="floatingPassword">Password</label>
+          </div>
+          <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Sign up</button>
+          <small class="text-muted">By clicking Sign up, you agree to the terms of use.</small>
+          <hr class="my-4">
+          <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
+          <button class="w-100 py-2 mb-2 btn btn-outline-dark rounded-3" type="submit">
+            <svg class="bi me-1" width="16" height="16"><use xlink:href="#twitter"/></svg>
+            Sign up with Twitter
+          </button>
+          <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
+            <svg class="bi me-1" width="16" height="16"><use xlink:href="#facebook"/></svg>
+            Sign up with Facebook
+          </button>
+          <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
+            <svg class="bi me-1" width="16" height="16"><use xlink:href="#github"/></svg>
+            Sign up with GitHub
+          </button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- carousel -->
+	<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="images/women.jpg" class="d-block w-100" alt="...">
+      
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="images/pencil2.jpg" class="d-block w-100" alt="...">
+      
+    </div>
+    <div class="carousel-item">
+      <img src="images/oil.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<br>
+<br>
+<!-- aboutus -->
+<div id="artist" class="border border-left border-right">
+<div class="fw-normal"><h1 align="center">OUR ARTISTS</h1></div>
+ <div class="container marketing my-4 my-4">
+    <div class="row">
+      <div class="col-lg-4">
+        <img src="img2/mf.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em"></text>
+
+        <h2 class="fw-normal">M F Hussain</h2>
+        <p>Maqbool Fida Hussain is one of the best known painters in the country, who has earned the title of “Piccasso of India”.Widely famous for his wonderful technique and unconventional work, this great painter has given nearly 6 lakh pieces of art, featuring mostly women and horses. The artist acquired a controversial reputation for making nude paintings of Indian Goddesses, for which he had to live in exile till he died in 2011.</p>
+        <!-- <p><a class="btn btn-secondary" href="#">datails</a></p> -->
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img src="img2/sec.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em"></text>
+
+        <h2 class="fw-normal"> Syed Haider Raza</h2>
+        <p>Featuring next on the list is the best selling painter, Syed Haider Raza, who is appreciated for his vivid and artistic paintings, throwing light mainly on the philosophy of India. His most famous paintings include “Saurashtra” and “La Terre”, the first one sold for a huge sum of Rs 16 crore in 2010, making it the most expensive Indian painting.</p>
+        <!-- <p><a class="btn btn-secondary" href="#">عرض التفاصيل</a></p> -->
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+       <img src="img2/third.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em"></text>
+
+        <h2 class="fw-normal"> Francis Newton Souza</h2>
+        <p>known as the first crossover painter in the country, F N Souza is known for his paintings, which focus on the dark and depressing sides of the society. A painting called “Birth” was sold by Christies for Rs 11.3 crore. Nearly 140 works of this painter were sold by Christies, after he died in 2002.</p>
+       <!--  <p><a class="btn btn-secondary" href="#">عرض التفاصيل</a></p> -->
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+    <div class="container marketing">
+    <div class="row">
+      <div class="col-lg-4">
+        <img src="img2/art1.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em"></text>
+
+        <h2 class="fw-normal">M F Hussain</h2>
+        <p>Another popular Indian painter, who is recognized for playing a key role in popularizing Indian paintings on a global level, is Tyeb Mehta. The great painter has some bestselling works to his credit, including “Celebration” which sold for Rs 1.5 crore in 2002 and “A Figure on a Rickshaw”, which fetched Rs 14 crore. Tyeb Mehta died in 2009.</p>
+        <!-- <p><a class="btn btn-secondary" href="#">datails</a></p> -->
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img src="img2/forth.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em"></text>
+
+        <h2 class="fw-normal"> Syed Haider Raza</h2>
+        <p>The first contemporary female painter on the list is Arpita Singh, whose paintings are based on the daily lives of Indian women. Use of bright hues is the trademark of her work and her paintings reflect a tinge of Bengali folk art. “Wish Dreams” is a highly acclaimed work of hers, which was sold for Rs 9.5 crore in 2010.</p>
+        <!-- <p><a class="btn btn-secondary" href="#">عرض التفاصيل</a></p> -->
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+       <img src="img2/fifth.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em"></text>
+
+        <h2 class="fw-normal"> Francis Newton Souza</h2>
+        <p>Among the top 10 most popular Indian painters is the name of Ganesh Pyne, whose famous works include “The Assasin” and “Before the Chariot”. His paintings reflect death and decay, perhaps influenced by the trauma faced by him when he witnesses religious riots and Naxalite activities.</p>
+       <!--  <p><a class="btn btn-secondary" href="#">عرض التفاصيل</a></p> -->
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+</div>
+<!-- types of styles -->
+<!-- <div class="b-example-divider"></div> -->
+  <div class="container px-4 py-5" id="custom-cards">
+    <h2 class="pb-2 border-bottom">Types Of Styles In Art:-</h2>
+
+    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" id="#realism" style="background-image: url('images/man.jpg'); background-size: cover; background-repeat: no-repeat;" >
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+            <h4 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"> Realism  :</h4> <br><h3>unembellished depiction of nature or of contemporary life<br><br><br><br></h3> 
+           
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('images/photo.jpg');background-size: cover; background-repeat: no-repeat;">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+            <h4 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Photorealism:</h4> <h3>  American art taking photography as its inspiration<br><br><br><br></h3>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('images1/ex.jpg');background-size: cover; background-repeat: no-repeat;">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+            <h4 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Expressionism:</h4> <h3> the subjective emotions and responses that objects<br><br><br><br> </h3>
+            
+          </div>
+        </div>
+      </div>
+       <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('images/abstract.jpg');background-size: cover; background-repeat: no-repeat;">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+            <h4 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"> Abstract:</h4> <h3>communicating instead through lines, shapes, colours, forms.<br><br><br><br></h3>
+            
+          </div>
+        </div>
+      </div>
+       <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('images/sur.jpg');background-size: cover; background-repeat: no-repeat;">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+            <h4 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Surrealism:</h4><h2>Surrealism aims to revolutionise human experience<br><br><br><br></h2>
+            
+          </div>
+        </div>
+      </div>
+       <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('images/pop.jpg');background-size: cover; background-repeat: no-repeat;">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+            <h4 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Pop Art:</h4> <h3>a deconstruction of images seen in popular culture<br><br><br><br> </h3>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ <!-- types of paints -->
+ <!--  <div class="b-example-divider"></div> -->
+  <div class="container px-4 py-5" id="custom-cards">
+    <h2 class="pb-2 border-bottom">Types Of Art:-</h2>
+
+    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('images1/oil.jpg'); background-size: cover; background-repeat: no-repeat;">
+          <!--  <div class="modal-dialog modal-dialog-centered" id="art1"> this is oil art</div>  -->
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+            <h4 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"> <br>Oil Art<br><br><br><br></h4> 
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('images1/water.jpg');background-size: cover; background-repeat: no-repeat;">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+            <h4 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"><br>Water Art<br><br><br><br></h4>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('images1/spray.jpg');background-size: cover; background-repeat: no-repeat;">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+            <h4 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"><br>Spray Art<br><br><br><br></h4> 
+          </div>
+        </div>
+      </div>
+       <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('images1/gou.jpg');background-size: cover; background-repeat: no-repeat;">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+            <h4 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"><br>Gouache Art<br><br><br><br></h4> <!-- <h3>communicating instead through lines, shapes, colours, forms.</h3> -->
+            
+          </div>
+        </div>
+      </div>
+       <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('images1/fre.jpg');background-size: cover; background-repeat: no-repeat;">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+            <h4 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"><br>Fresco Art<br><br><br><br></h4><!-- <h2>Surrealism aims to revolutionise human experience</h2> -->   
+          </div>
+        </div>
+      </div>
+       <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('images1/digital.jpg');background-size: cover; background-repeat: no-repeat;">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+            <h4 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"><br>Digital Art<br><br><br><br></h4> <!-- <h3>a deconstruction of images seen in popular culture </h3> -->
+           
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- abstract art -->
+<main >
+  <section class="py-5 text-center container" id="abstract">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">Abstract Style Gallery</h1>
+        <p><h4>
+           Abstract design uses the language of shape, form, colour and gestural marks to create work that does not attempt to depict visual reality accurately. <br></h4>
+          <a href="#" class="btn btn-primary my-2">Home Page</a>
+          <a href="#expressionsim" class="btn btn-secondary my-2">Next</a>
+        </p>
+      </div>
+    </div>
+  </section>
+  <div class="album py-5 bg-light">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col1">
+          <div class="card shadow-sm">
+           <img src="images1/ab1.jpg">
+            <div class="card-body">
+              <p class="card-text">Feel good paninting. <br>
+             $1200<br></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    Buy</button>
+                  <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Button trigger modal -->
+<!--art  Modal -->
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">SignIn Form</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form class="row g-3">
+  <div class="col-md-6">
+    <label for="inputEmail4" class="form-label">Email</label>
+    <input type="email" class="form-control" id="inputEmail4">
+  </div>
+  <div class="col-md-6">
+    <label for="inputPassword4" class="form-label">Password</label>
+    <input type="password" class="form-control" id="inputPassword4">
+  </div>
+  <div class="col-12">
+    <label for="inputAddress" class="form-label">Address</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+  </div>
+  <div class="col-12">
+    <label for="inputAddress2" class="form-label">Address 2</label>
+    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+  </div>
+  <div class="col-md-6">
+    <label for="inputCity" class="form-label">City</label>
+    <input type="text" class="form-control" id="inputCity">
+  </div>
+  <div class="col-md-4">
+    <label for="inputState" class="form-label">State</label>
+    <select id="inputState" class="form-select">
+      <option selected>Choose...</option>
+      <option>...</option>
+    </select>
+  </div>
+  <div class="col-md-2">
+    <label for="inputZip" class="form-label">Zip</label>
+    <input type="text" class="form-control" id="inputZip">
+  </div>
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+        Check me out
+      </label>
+    </div>
+  </div>
+  <div class="col-12">
+    <button type="submit" class="btn btn-primary">Sign in</button>
+  </div>
+</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+        <div class="col1">
+          <div class="card shadow-sm">
+            <img src="images1/ab2.jpg">
+            <div class="card-body">
+              <p class="card-text">Feel good paninting. <br>
+             $800.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    Buy</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col1">
+          <div class="card shadow-sm">
+            <img src="images1/ab3.jpg">
+            <div class="card-body">
+              <p class="card-text">Feel good paninting. <br>
+             $1000</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    Buy</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col1">
+          <div class="card shadow-sm">
+            <img src="images1/ab4.jpg">
+
+            <div class="card-body">
+              <p class="card-text">Feel good paninting. <br>
+             $1600</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    Buy</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col1">
+          <div class="card shadow-sm">
+            <img src="images1/ab5.jpg">
+
+            <div class="card-body">
+              <p class="card-text">Feel good paninting. <br>
+             $1100</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    Buy</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col1">
+          <div class="card shadow-sm">
+           <img src="images1/ab6.jpg">
+
+            <div class="card-body">
+              <p class="card-text">Feel good paninting. <br>
+             $15000.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    Buy</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</main>
+<!-- expressionism art -->
+<main>
+  <section class="py-5 text-center container"  id="expressionsim">>
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        
+        <h1 class="fw-light">Expressionism Style Gallery</h1>
+        <p><h4>
+          In expressionist art, colour in particular can be highly intense and non-naturalistic, brushwork is typically free and paint application tends to be generous and highly textured. <br></h4>
+          <a href="#" class="btn btn-primary my-2">Home Page</a>
+          <a href="#pop" class="btn btn-secondary my-2">Next</a>
+        </p>
+      </div>
+    </div>
+  </section>
+    <div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col1">
+          <div class="card shadow-sm">
+           <img src="images1/ex1.jpg">
+            <div class="card-body">
+              <p class="card-text">Feel good paninting. <br>
+             $1500<br></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    Buy</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col1">
+          <div class="card shadow-sm">
+            <img src="images1/ex2.jpg">
+            <div class="card-body">
+              <p class="card-text">Feel good paninting. <br>
+             $5600</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    Buy</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col1">
+          <div class="card shadow-sm">
+            <img src="images1/ex7.jpg">
+            <div class="card-body">
+              <p class="card-text">Feel good paninting. <br>
+             $5900</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    Buy</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col1">
+          <div class="card shadow-sm">
+            <img src="images1/ex4.jpg">
+            <div class="card-body">
+              <p class="card-text">Feel good paninting. <br>
+             $3400</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    Buy</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col1">
+          <div class="card shadow-sm">
+            <img src="images1/ex5.jpg">
+            <div class="card-body">
+              <p class="card-text">Feel good paninting. <br>
+             $2500</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    Buy</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col1">
+          <div class="card shadow-sm">
+           <img src="images1/ex6.jpg">
+
+            <div class="card-body">
+              <p class="card-text">Feel good paninting. <br>
+             $15000</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    Buy</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</main>
+       <!-- pop style art -->
+<main>
+  <section class="py-5 text-center container" id="pop">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto" >
+
+        <h1 class="fw-light">Pop Style Gallery</h1>
+        <p><h4>
+          Pop art is an art movement that emerged in the United Kingdom and the United States during the mid- to late-1950s.The movement presented a challenge to traditions of fine art by including imagery from popular and mass culture, such as advertising, comic books and mundane mass-produced objects.</h4><br>
+          <a href="#" class="btn btn-primary my-2">Home Page</a>
+          <a href="#surrealism" class="btn btn-secondary my-2">Next</a>
+        </p>
+      </div>
+    </div>
+  </section>
+  <div class="album py-5 bg-light">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col1">
+          <div class="card shadow-sm">
+           <img src="images1/po1.jpg">
+            <div class="card-body">
+              <p class="card-text">Feel good paninting. <br>
+             $2600<br></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    Buy</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col1">
+          <div class="card shadow-sm">
+            <img src="images1/po2.jpg">
+            <div class="card-body">
+              <p class="card-text">Feel good paninting. <br>
+             $1900</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    Buy</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col1">
+          <div class="card shadow-sm">
+            <img src="images1/po3.jpg">
+            <div class="card-body">
+              <p class="card-text">Feel good paninting. <br>
+             $2000</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    Buy</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col1">
+          <div class="card shadow-sm">
+            <img src="images1/po4.jpg">
+
+            <div class="card-body">
+              <p class="card-text">Feel good paninting. <br>
+             $10500</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    Buy</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col1">
+          <div class="card shadow-sm">
+            <img src="images1/po5.jpg">
+
+            <div class="card-body">
+              <p class="card-text">Feel good paninting. <br>
+             $12500</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    Buy</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col1">
+          <div class="card shadow-sm">
+           <img src="images1/po6.jpg">
+            <div class="card-body">
+              <p class="card-text">Feel good paninting. <br>
+             $15400</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    Buy</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</main>
+<!-- surrealism art -->
+<main>
+  <section class="py-5 text-center container" id="surrealism">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto" >
+     
+        <h1 class="fw-light">Surrealism Style Gallery</h1>
+        <p><h4>
+          Surrealism aims to revolutionise human experience. It balances a rational vision of life with one that asserts the power of the unconscious and dreams. The movement's artists find magic and strange beauty in the unexpected and the uncanny, the disregarded and the unconventional. <br></h4>
+          <a href="#" class="btn btn-primary my-2">Home Page</a>
+          <a href="#realism" class="btn btn-secondary my-2">Next</a>
+        </p>
+      </div>
+    </div>
+  </section>
+  <div class="album py-5 bg-light">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col1">
+          <div class="card shadow-sm">
+           <img src="images1/su.jpg">
+            <div class="card-body">
+              <p class="card-text">Feel good paninting. <br>
+             $15050<br></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    Buy</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col1">
+          <div class="card shadow-sm">
+            <img src="images1/su2.jpg">
+            <div class="card-body">
+              <p class="card-text">Feel good paninting. <br>
+             $15300</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    Buy</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col1">
+          <div class="card shadow-sm">
+            <img src="images1/su3.jpg">
+            <div class="card-body">
+              <p class="card-text">Feel good paninting. <br>
+             $11500</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    Buy</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col1">
+          <div class="card shadow-sm">
+            <img src="images1/su4.jpg">
+
+            <div class="card-body">
+              <p class="card-text">Feel good paninting. <br>
+             $14500</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    Buy</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col1">
+          <div class="card shadow-sm">
+            <img src="images1/su5.jpg">
+            <div class="card-body">
+              <p class="card-text">Feel good paninting. <br>
+             $18500</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    Buy</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col1">
+          <div class="card shadow-sm">
+           <img src="images1/su6.jpg">
+
+            <div class="card-body">
+              <p class="card-text">Feel good paninting. <br>
+             $10500</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    Buy</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</main>
+<!-- realism art -->
+<main>
+  <section class="py-5 text-center container" id="realism">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto" >
+        
+        <h1 class="fw-light">Realism Style Gallery</h1>
+        <p><h4>
+          In its specific sense realism refers to a mid nineteenth century artistic movement characterised by subjects painted from everyday life in a naturalistic manner; however the term is also generally used to describe artworks painted in a realistic almost photographic way.  <br></h4>
+          <a href="#" class="btn btn-primary my-2">Home Page</a>
+          <a href="#photorealism" class="btn btn-secondary my-2">Next</a>
+        </p>
+      </div>
+    </div>
+  </section>
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col1">
+          <div class="card shadow-sm">
+           <img src="images1/re1.jpg">
+            <div class="card-body">
+              <p class="card-text">Feel good paninting. <br>
+             $11500<br></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    Buy</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col1">
+          <div class="card shadow-sm">
+            <img src="images1/re2.jpg">
+            <div class="card-body">
+              <p class="card-text">Feel good paninting. <br>
+             $18500</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    Buy</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col1">
+          <div class="card shadow-sm">
+            <img src="images1/re3.jpg">
+            <div class="card-body">
+              <p class="card-text">Feel good paninting. <br>
+             $15700</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    Buy</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col1">
+          <div class="card shadow-sm">
+            <img src="images1/re4.jpg">
+
+            <div class="card-body">
+              <p class="card-text">Feel good paninting. <br>
+             $13400</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    Buy</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col1">
+          <div class="card shadow-sm">
+            <img src="images1/re5.jpg">
+
+            <div class="card-body">
+              <p class="card-text">Feel good paninting. <br>
+             $20500</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    Buy</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col1">
+          <div class="card shadow-sm">
+           <img src="images1/re6.jpg">
+
+            <div class="card-body">
+              <p class="card-text">Feel good paninting. <br>
+             $30500</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    Buy</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</main>
+<!-- photorealism art -->
+<main>
+
+  <section class="py-5 text-center container"   id="photorealism">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        
+        <h1 class="fw-light">Photorealism Style Gallery</h1>
+        <p><h4>
+          Photorealist artists strive to create paintings that resemble photographs as closely as possible. Photorealist art is also often referred to as Super-Realism, New Realism, Sharp Focus Realism, Verism, or Hyper-Realism, although technically each of these names falls under its own specific genre. <br></h4>
+          <a href="#" class="btn btn-primary my-2">Home Page</a>
+          <!-- <a href="#about" class="btn btn-secondary my-2">About</a> -->
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col1">
+          <div class="card shadow-sm">
+           <img src="images1/ph1.jpg">
+            <div class="card-body">
+              <p class="card-text">Feel good paninting. <br>
+             $10500<br></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    Buy</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col1">
+          <div class="card shadow-sm">
+            <img src="images1/ph2.jpg">
+            <div class="card-body">
+              <p class="card-text">Feel good paninting. <br>
+             $14500</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    Buy</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col1">
+          <div class="card shadow-sm">
+            <img src="images1/ph3.jpg">
+            <div class="card-body">
+              <p class="card-text">Feel good paninting. <br>
+             $1500</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    Buy</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col1">
+          <div class="card shadow-sm">
+            <img src="images1/ph4.jpg">
+
+            <div class="card-body">
+              <p class="card-text">Feel good paninting. <br>
+             $35000</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    Buy</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col1">
+          <div class="card shadow-sm">
+            <img src="images1/ph5.jpg">
+
+            <div class="card-body">
+              <p class="card-text">Feel good paninting. <br>
+             $23500</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    Buy</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col1">
+          <div class="card shadow-sm">
+           <img src="images1/ph6.jpg">
+
+            <div class="card-body">
+              <p class="card-text">Feel good paninting. <br>
+             $16500</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    Buy</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</main>
+<!-- oil art -->
+<main>
+
+  <section class="py-5 text-center container" id="oil">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto" >
+        
+        <h1 class="fw-light">Oil Art</h1>
+        <p><h4>
+          The advantages of oil for painting images include "greater flexibility, richer and denser colour, the use of layers, and a wider range from light to dark". But the process is slower, especially when one layer of paint needs to be allowed to dry before another is applied. <br></h4>
+          <a href="#" class="btn btn-primary my-2">Home Page</a>
+          <a href="#water" class="btn btn-secondary my-2">Next</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col1">
+          <div class="card shadow-sm">
+           <img src="images1/oil1.jpg">
+            <div class="card-body">
+              <p class="card-text">Feel good paninting. <br>
+             $25000<br></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    Buy</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col1">
+          <div class="card shadow-sm">
+            <img src="images1/oil7.jpg">
+            <div class="card-body">
+              <p class="card-text">Feel good paninting. <br>
+             $35000</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    Buy</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col1">
+          <div class="card shadow-sm">
+            <img src="images1/oil3.jpg">
+            <div class="card-body">
+              <p class="card-text">Feel good paninting. <br>
+             $25000</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    Buy</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col1">
+          <div class="card shadow-sm">
+            <img src="images1/oil4.jpg">
+
+            <div class="card-body">
+              <p class="card-text">Feel good paninting. <br>
+             $34000</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    Buy</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col1">
+          <div class="card shadow-sm">
+            <img src="images1/oil5.jpg">
+
+            <div class="card-body">
+              <p class="card-text">Feel good paninting. <br>
+             $23000</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    Buy</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col1">
+          <div class="card shadow-sm">
+           <img src="images1/oil6.jpg">
+
+            <div class="card-body">
+              <p class="card-text">Feel good paninting. <br>
+             $10500</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    Buy</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</main>
+<!-- water art -->
+<main>
+
+  <section class="py-5 text-center container" id="water">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto" >
+        
+        <h1 class="fw-light">Water Art</h1>
+        <p><h4>
+          Watercolor (American English) or watercolour (British English; see spelling differences), also aquarelle (French: [akwaʁɛl]; from Italian diminutive of Latin aqua "water"), is a painting method in which the paints are made of pigments suspended in a water-based solution. <br></h4>
+          <a href="#" class="btn btn-primary my-2">Home Page</a>
+          <a href="#spray" class="btn btn-secondary my-2">Next</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col1">
+          <div class="card shadow-sm">
+           <img src="images1/wat1.jpg">
+            <div class="card-body">
+              <p class="card-text">Feel good paninting. <br>
+             $17500<br></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    Buy</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col1">
+          <div class="card shadow-sm">
+            <img src="images1/wat2.jpg">
+            <div class="card-body">
+              <p class="card-text">Feel good paninting. <br>
+             $1500</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    Buy</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col1">
+          <div class="card shadow-sm">
+            <img src="images1/wat3.jpg">
+            <div class="card-body">
+              <p class="card-text">Feel good paninting. <br>
+             $12500</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    Buy</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col1">
+          <div class="card shadow-sm">
+            <img src="images1/wat4.jpg">
+
+            <div class="card-body">
+              <p class="card-text">Feel good paninting. <br>
+             $15050</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    Buy</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col1">
+          <div class="card shadow-sm">
+            <img src="images1/wat5.jpg">
+
+            <div class="card-body">
+              <p class="card-text">Feel good paninting. <br>
+             $14500</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    Buy</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col1">
+          <div class="card shadow-sm">
+           <img src="images1/wat6.jpg">
+
+            <div class="card-body">
+              <p class="card-text">Feel good paninting. <br>
+             $15600</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    Buy</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</main>
+<!-- spray art -->
+<main>
+
+  <section class="py-5 text-center container" id="spray">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto" >
+        
+        <h1 class="fw-light">Spray Art</h1>
+        <p><h4>
+          One of the most radical contemporary art movements, "graffiti art" (also called "Street Art", "Spraycan Art", "Subway Art" or "Aerosol Art") commonly refers to decorative imagery applied by paint or other means to buildings, public transport or other property. <br></h4>
+          <a href="#" class="btn btn-primary my-2">Home Page</a>
+          <a href="#gouache" class="btn btn-secondary my-2">Next</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col1">
+          <div class="card shadow-sm">
+           <img src="images1/spr1.jpg">
+            <div class="card-body">
+              <p class="card-text">Feel good paninting. <br>
+             $15400<br></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    Buy</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col1">
+          <div class="card shadow-sm">
+            <img src="images1/spr2.jpg">
+            <div class="card-body">
+              <p class="card-text">Feel good paninting. <br>
+             $41500</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    Buy</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col1">
+          <div class="card shadow-sm">
+            <img src="images1/spr3.jpg">
+            <div class="card-body">
+              <p class="card-text">Feel good paninting. <br>
+             $1500</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    Buy</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col1">
+          <div class="card shadow-sm">
+            <img src="images1/spr4.jpg">
+
+            <div class="card-body">
+              <p class="card-text">Feel good paninting. <br>
+             $91500</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    Buy</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col1">
+          <div class="card shadow-sm">
+            <img src="images1/spr5.jpg">
+
+            <div class="card-body">
+              <p class="card-text">Feel good paninting. <br>
+             $14500</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    Buy</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col1">
+          <div class="card shadow-sm">
+           <img src="images1/spr6.jpg">
+
+            <div class="card-body">
+              <p class="card-text">Feel good paninting. <br>
+             $18500</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    Buy</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</main>
+<!-- gouache art -->
+<main>
+
+  <section class="py-5 text-center container" id="gouache">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto" >
+        
+        <h1 class="fw-light">Gouache Art</h1>
+        <p><h4>
+          Gouache paint is similar to watercolor, but is modified to make it opaque. Just as in watercolor, the binding agent has traditionally been gum arabic but since the late nineteenth century cheaper varieties use yellow dextrin. When the paint is sold as a paste, e.g. in tubes, the dextrin has usually been mixed with an equal volume of water. <br></h4>
+          <a href="#" class="btn btn-primary my-2">Home Page</a>
+          <a href="#frescho" class="btn btn-secondary my-2">Next</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col1">
+          <div class="card shadow-sm">
+           <img src="images1/gro1.jpg">
+            <div class="card-body">
+              <p class="card-text">Feel good paninting. <br>
+             $21500<br></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    Buy</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col1">
+          <div class="card shadow-sm">
+            <img src="images1/gro2.jpg">
+            <div class="card-body">
+              <p class="card-text">Feel good paninting. <br>
+             $81500</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    Buy</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col1">
+          <div class="card shadow-sm">
+            <img src="images1/gro3.jpg">
+            <div class="card-body">
+              <p class="card-text">Feel good paninting. <br>
+             $21500</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    Buy</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col1">
+          <div class="card shadow-sm">
+            <img src="images1/gro4.jpg">
+
+            <div class="card-body">
+              <p class="card-text">Feel good paninting. <br>
+             $51500</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    Buy</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col1">
+          <div class="card shadow-sm">
+            <img src="images1/gro5.jpg">
+
+            <div class="card-body">
+              <p class="card-text">Feel good paninting. <br>
+             $11500</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    Buy</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col1">
+          <div class="card shadow-sm">
+           <img src="images1/gro6.jpg">
+
+            <div class="card-body">
+              <p class="card-text">Feel good paninting. <br>
+             $81500</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    Buy</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</main>
+<!-- frescho art -->
+<main>
+
+  <section class="py-5 text-center container" id="frescho">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto" >
+        
+        <h1 class="fw-light">Frescho Art</h1>
+        <p><h4>
+          A fresco is a type of wall painting. The term comes from the Italian word for fresh because plaster is applied to the walls while still wet. There are two methods of carrying out fresco painting: buon fresco and fresco a secco. For both methods layers of fine plaster are spread over the wall surface. <br></h4>
+          <a href="#" class="btn btn-primary my-2">Home Page</a>
+          <a href="#digital" class="btn btn-secondary my-2">Next</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col1">
+          <div class="card shadow-sm">
+           <img src="images1/fre1.jpg">
+            <div class="card-body">
+              <p class="card-text">Feel good paninting. <br>
+             $71500<br></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    Buy</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col1">
+          <div class="card shadow-sm">
+            <img src="images1/fre2.jpg">
+            <div class="card-body">
+              <p class="card-text">Feel good paninting. <br>
+             $20000</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    Buy</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col1">
+          <div class="card shadow-sm">
+            <img src="images1/fre3.jpg">
+            <div class="card-body">
+              <p class="card-text">Feel good paninting. <br>
+             $50500</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    Buy</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col1">
+          <div class="card shadow-sm">
+            <img src="images1/fre4.jpg">
+
+            <div class="card-body">
+              <p class="card-text">Feel good paninting. <br>
+             $23500</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    Buy</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col1">
+          <div class="card shadow-sm">
+            <img src="images1/fre5.jpg">
+
+            <div class="card-body">
+              <p class="card-text">Feel good paninting. <br>
+             $18500</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    Buy</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col1">
+          <div class="card shadow-sm">
+           <img src="images1/fre6.jpg">
+
+            <div class="card-body">
+              <p class="card-text">Feel good paninting. <br>
+             $13500</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    Buy</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</main>
+<!-- digital art -->
+<main>
+
+  <section class="py-5 text-center container" id="digital">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto" >
+        
+        <h1 class="fw-light">Digital Art</h1>
+        <p><h4>
+          To make digital art, start by sketching out your rough drawing on paper and scanning it into your computer. Next, open the file in a program like GIMP or Photoshop. Then, create new layers for each part of your drawing, like a face, hair, or background, so you can adjust each part without messing up the rest. <br></h4>
+          <a href="#" class="btn btn-primary my-2">Home Page</a>
+          <a href="#submit" class="btn btn-secondary my-2">Contact us</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col1">
+          <div class="card shadow-sm">
+           <img src="images1/dig1.jpg">
+            <div class="card-body">
+              <p class="card-text">Feel good paninting. <br>
+             $13600<br></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    Buy</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col1">
+          <div class="card shadow-sm">
+            <img src="images1/dig2.jpg">
+            <div class="card-body">
+              <p class="card-text">Feel good paninting. <br>
+             $15800</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    Buy</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col1">
+          <div class="card shadow-sm">
+            <img src="images1/dig3.jpg">
+            <div class="card-body">
+              <p class="card-text">Feel good paninting. <br>
+             $14500</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    Buy</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col1">
+          <div class="card shadow-sm">
+            <img src="images1/dig4.jpg">
+
+            <div class="card-body">
+              <p class="card-text">Feel good paninting. <br>
+             $15400</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    Buy</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col1">
+          <div class="card shadow-sm">
+            <img src="images1/dig5.jpg">
+
+            <div class="card-body">
+              <p class="card-text">Feel good paninting. <br>
+             $12500</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    Buy</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col1">
+          <div class="card shadow-sm">
+           <img src="images1/dig6.jpg">
+
+            <div class="card-body">
+              <p class="card-text">Feel good paninting. <br>
+             $19500</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    Buy</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</main>
+<!-- contact form -->
+<div id="submit">
+  <body class="bg-light ">
+    
+<div class="container">
+  <main>
+    <div class="py-5 text-center">
+       <h2>Contact form</h2>
+       </div>
+       <div class="col-md-12 col-lg-12">
+        <form class="needs-validation" novalidate>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label for="firstName" class="form-label">First name</label>
+              <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Valid first name is required.
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <label for="lastName" class="form-label">Last name</label>
+              <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Valid last name is required.
+              </div>
+            </div>
+             <div class="col-12">
+              <label for="email" class="form-label">Email <span class="text-muted">(Optional)</span></label>
+              <input type="email" class="form-control" id="email" placeholder="you@example.com">
+              <div class="invalid-feedback">
+                Please enter a valid email address for shipping updates.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="address" class="form-label">Message</label>
+              <input type="text" class="form-control" id="address" placeholder="add your message" required>
+              <div class="invalid-feedback">
+                Please enter your shipping address.
+              </div>
+            </div>
+             <div class="col-md-6">
+              <label for="country" class="form-label">Country</label>
+              <select class="form-select" id="country" required>
+                <option value="">Choose...</option>
+                <option>United States</option>
+              </select>
+              <div class="invalid-feedback">
+                Please select a valid country.
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <label for="state" class="form-label">State</label>
+              <select class="form-select" id="state" required>
+                <option value="">Choose...</option>
+                <option>California</option>
+              </select>
+              <div class="invalid-feedback">
+                Please provide a valid state.
+              </div>
+            </div>
+             <button class="w-100 btn btn-primary btn-lg" type="submit">submit</button>
+        </form>
+      </div>
+    </div>
+  </main>
+  <!-- footer -->
+ <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="bootstrap" viewBox="0 0 118 94">
+    <title>Bootstrap</title>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"></path>
+  </symbol>
+   <symbol id="facebook" viewBox="0 0 16 16">
+    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+  </symbol>
+  <symbol id="instagram" viewBox="0 0 16 16">
+      <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+    </symbol>
+    <symbol id="twitter" viewBox="0 0 16 16">
+    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+  </symbol>
+</svg>
+<div class="container">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+      <span class="mb-3 mb-md-0 text-muted">&copy; 2022 Company, Inc</span>
+    </div>
+
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+      <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+      <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+      <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+    </ul>
+  </footer>
+</div>
+</body>
+</html>
